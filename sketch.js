@@ -23,7 +23,7 @@ function preload()
   dogimg = loadImage("images/dogImg.png");
   happyDogimg = loadImage("images/dogImg1.png");
   bedroomimg = loadImage("pet/virtual pet images/Bed Room.png");
-  gardenimg = loadImage("pet/virtual pet images/garden.png");
+  garden = loadImage("pet/virtual pet images/garden.png");
   washroomimg = loadImage("pet/virtual pet images/Wash Room.png");
 }
 function setup() {
@@ -86,7 +86,7 @@ function draw() {
     update("playing");
     var canvas =createCanvas(500,500) 
     back.visible = true;
-    back.addImage(gardenimg);
+    back.addImage(garden);
 }else if(currentTime == (lastFed+2)){
   update("bedroom");
   var canvas =createCanvas(500,500) 
